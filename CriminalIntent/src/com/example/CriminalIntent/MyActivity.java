@@ -1,10 +1,10 @@
 package com.example.CriminalIntent;
 
-import android.app.*;
+import android.support.v4.app.*;
 import android.os.Bundle;
 
 
-public class MyActivity extends Activity {
+public class MyActivity extends FragmentActivity {
     /**
      * Called when the activity is first created.
      */
@@ -13,7 +13,7 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        FragmentManager fm = getFragmentManager();
+        FragmentManager fm = getSupportFragmentManager();
         Fragment fragment = fm.findFragmentById(R.id.fragmentContainer);
 
         if(fragment == null)

@@ -1,6 +1,6 @@
 package com.example.CriminalIntent;
 
-import android.app.Fragment;
+import android.support.v4.app.*;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
